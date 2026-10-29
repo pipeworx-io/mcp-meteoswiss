@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-meteoswiss",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Swiss weather and federal geodata from MeteoSwiss and swisstopo on data.geo.admin.ch — find SwissMetNet automatic weather stations, radar, pollen, ICON forecasts and climate normals, plus elevation and topographic layers, and get the direct CSV, GeoTIFF and NetCDF download URLs for each.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-meteoswiss": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "meteoswiss"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-meteoswiss.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/meteoswiss",
   "pipeworx": {
-    "sourceHash": "v1-c36b4f24af3d1d3a06cd69113db5e5682fb091fce7bf4f18cac13a3da1a00722",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "meteoswiss",
+    "gatewaySlug": "meteoswiss",
+    "sourceHash": "v1-cc8167d38ed1f444a2e3ade3c2a248b337847b112f9582c1e7cd14183b1286f0",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }

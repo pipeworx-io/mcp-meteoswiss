@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/meteoswiss",
   "title": "Meteoswiss",
   "description": "Swiss weather and federal geodata from MeteoSwiss and swisstopo on data.geo.admin.ch — find…",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/meteoswiss",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-meteoswiss",
