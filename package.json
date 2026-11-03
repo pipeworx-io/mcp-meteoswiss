@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-meteoswiss",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Swiss weather and federal geodata from MeteoSwiss and swisstopo on data.geo.admin.ch — find SwissMetNet automatic weather stations, radar, pollen, ICON forecasts and climate normals, plus elevation and topographic layers, and get the direct CSV, GeoTIFF and NetCDF download URLs for each.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "meteoswiss",
     "gatewaySlug": "meteoswiss",
-    "sourceHash": "v1-cc8167d38ed1f444a2e3ade3c2a248b337847b112f9582c1e7cd14183b1286f0",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-de19d9c96e9f7c86ccced2c0bd4b3bb5eb48c981936a861058f9e7769ad7d774",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
